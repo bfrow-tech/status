@@ -6,6 +6,7 @@
 
   <title>BFrow status page</title>
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1"/>
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel='stylesheet' type='text/css'>
   <style>
       html, body {
         background-color: #f6f8fa;
@@ -14,30 +15,59 @@
           padding: 10px;
       }
       a {
-          color: #9b7b81
+          color: black;
+          margin-left: 40px;
+          font-size: 16px;
+          text-transform: uppercase;
+          text-decoration: none;
+          line-height: 20px;
+          font-weight: 600;
       }
       h1 {
           text-align:center;
+          margin-top: 20px;
       }
       h2 {
-          margin-top: 0;
+          line-height: 22px;
+          text-transform: uppercase;
+          margin: 50px 40px 0 40px;
+          font-family: Playfair Display, sans-serif;
+          font-weight: normal;
+          font-size: 24px;
+      }
+      h4 {
+          margin-top: 30px;
       }
       a:hover {
           text-decoration: none;
       }
+      p {
+          margin-left: 40px;
+          font-size: 12px;
+      }
+      span {
+          color: #9B7B81;
+      }
+      .links {
+          margin-top: 40px;
+      }
       .status {
-        font-size: 15px;
+        font-size: 18px;
+      }
+      .status:hover {
+          color: #9B7B81;
       }
       .status::before {
         display: inline-block;
-        width: 14px;
-        height: 14px;
-        margin-right: 3px;
+        width: 25px;
+        height: 25px;
+        margin-right: 5px;
         content: "";
         background-size: 100% auto;
         background-repeat: no-repeat;
         background-position: center center;
         background-image: url(icon.svg);
+        vertical-align: sub;
     }
     .blocks {
         display: flex;
@@ -46,14 +76,17 @@
         align-content: center;
     }
     .block {
+        height: 380px;
+        width: 360px;
         padding: 10px 20px;
         margin: 15px;
-        background-color: white;
+        background-color: #F0F0F0;
         border-radius: 5px;
         margin-bottom: 20px;
     }
     .center {
         text-align: center;
+        margin-top: 80px;
     }
   </style>
 </head>
@@ -65,20 +98,29 @@
   <h1>Status page</h1>
   <div class="blocks">
         <div class="block">
-                <h2>Production. v3.0.0</h2>
-                <h3><span class="status">Operational</span>&nbsp;— <a target="_blank" href="https://www.bfrow.com">bfrow.com</a></h3>
-                <h3><span class="status">Operational</span>&nbsp;— <a target="_blank" href="https://ui.bfrow.com">ui.bfrow.com</a></h3>
-                <h3><span class="status">Operational</span>&nbsp;— <a target="_blank" href="https://admin.bfrow.com">admin.bfrow.com</a></h3>
+                <h2>Production. <span>v3.0.0</span></h2>
+                <p>01.01.20</p>
+                <div class="links">
+                    <h4><a class="status" target="_blank" href="https://www.bfrow.com">bfrow.com</a></h4>
+                    <h4><a class="status" target="_blank" href="https://ui.bfrow.com">ui.bfrow.com</a></h4>
+                    <h4><a class="status" target="_blank" href="https://admin.bfrow.com">admin.bfrow.com</a></h4>
+                </div>
         </div>
         <div class="block">
-                <h2>Beta. v4.0.0</h2>
-                <h3><span class="status">Operational</span>&nbsp;— <a target="_blank" href="https://bfrow.fashion">bfrow.fashion</a></h3>
-                <h3><span class="status">Operational</span>&nbsp;— <a target="_blank" href="https://ui.bfrow.fashion">ui.bfrow.fashion</a></h3>
-                <h3><span class="status">Operational</span>&nbsp;— <a target="_blank" href="https://admin.bfrow.fashion">admin.bfrow.fashion</a></h3>
+                <h2>Beta. <span>v4.0.0</span></h2>
+                <p>01.01.20</p>
+                <div class="links">
+                    <h4><a class="status" target="_blank" href="https://bfrow.fashion">bfrow.fashion</a></h4>
+                    <h4><a class="status" target="_blank" href="https://ui.bfrow.fashion">ui.bfrow.fashion</a></h4>
+                    <h4><a class="status" target="_blank" href="https://admin.bfrow.fashion">admin.bfrow.fashion</a></h4>
+                </div>
         </div>
         <div class="block">
-                <h2>Development. Master</h2>
-                <h3><span class="status">Operational</span>&nbsp;— <a target="_blank" href="https://bfrowcom.bfrow.now.sh">bfrowcom.bfrow.now.sh</a></h3>
+                <h2>Master</h2>
+                <p>01.01.20</p>
+                <div class="links">
+                    <h4><a class="status" target="_blank" href="https://bfrowcom.bfrow.now.sh">bfrowcom.bfrow.now.sh</a></h4>
+                </div>
         </div>
   </div>
 </body>
